@@ -196,7 +196,7 @@ module EDI::E
 
     alias to_s_orig to_s
 
-    def to_s
+    def to_s(time="")
       return to_s_orig unless @format
       case @format.to_s
       when '101'
